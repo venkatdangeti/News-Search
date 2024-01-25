@@ -12,11 +12,9 @@ function searchNews(searchQuery) {
 
             var resultDiv = $("<div>")
 
-            resultDiv.append("h1", {
+            resultDiv.append($("<h1>", {
                 text: element.headline.main
-            })
-
-
+            }))
 
             $("#article-section").append(resultDiv)
 
