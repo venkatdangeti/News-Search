@@ -26,24 +26,24 @@
                 <h2 class="card-title">Search Parameters</h2>
                 <form>
                 <div class="mb-3">
-                    <label>Search term:</label>
-                    <input type="text">
+                    <label class="form-label">Search term:</label>
+                    <input id="search-input" class="form-control" type="text">
                 </div>
                 <div class="mb-3">
-                    <label>Number of records to retrieve:</label>
-                    <input type="text">
+                    <label class="form-label">Number of records to retrieve:</label>
+                    <input id="records-input" class="form-control" type="text">
                 </div>
                 <div class="mb-3">
-                    <label>Start year (optional):</label>
-                    <input type="text">
+                    <label class="form-label">Start year (optional):</label>
+                    <input id="star-year-input" class="form-control" type="text">
                 </div>
                 <div class="mb-3">
-                    <label>End year (optional):</label>
-                    <input type="text">
+                    <label class="form-label">End year (optional):</label>
+                    <input id="end-year-input" class="form-control" type="text">
                 </div>
 
-                <button type="submit">Search</button>
-                <button type="reset">clear</button>
+                <button type="submit" class="btn" id="search">Search</button>
+                <button type="reset" class="btn" id="clear">clear</button>
 
                 </form>
             </div>
@@ -55,7 +55,7 @@
     <div class="col-md-auto">
         <div class="card">
             <div class="card-body">
-                <h2 class="card-title">Top Articles</h2>
+                <i class="fa fa-table"></i> Top Articles
 
 
 
