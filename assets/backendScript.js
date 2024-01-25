@@ -7,6 +7,19 @@ function searchNews(searchQuery) {
     })
     .then(function (data) {
         console.log(data)
-        //append search results to page here
+        data.response.docs.forEach(element => {
+            console.log(element)
+
+            var resultDiv = $("<div>")
+
+            resultDiv.append("h1", {
+                text: element.headline.main
+            })
+
+
+
+            $("#article-section").append(resultDiv)
+
+        });
     });
  }
